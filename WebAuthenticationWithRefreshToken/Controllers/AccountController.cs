@@ -30,15 +30,9 @@ namespace WebAuthenticationWithRefreshToken.Controllers
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await _repo.RegisterUser(userModel);
+            UserManager result = await _repo.RegisterUser(userModel);
 
-            IHttpActionResult errorResult = GetErrorResult(result);
-
-            if (errorResult != null)
-            {
-                return errorResult;
-            }
-
+          
             return Ok();
         }
 

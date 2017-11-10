@@ -27,5 +27,6 @@ namespace WebAuthenticationWithRefreshToken.Models
     
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<RefreshToken> RefreshTokens { get; set; }
+        public virtual DbSet<UserManager> UserManagers { get; set; }
     }
 }

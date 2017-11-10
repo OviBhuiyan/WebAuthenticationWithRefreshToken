@@ -19,21 +19,26 @@ namespace WebAuthenticationWithRefreshToken
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
-        public async Task<IdentityResult> RegisterUser(UserModel userModel)
+        public async Task<UserManager> RegisterUser(UserModel userModel)
         {
-            IdentityUser user = new IdentityUser
+            UserManager user = new UserManager
             {
-                UserName = userModel.UserName
+                UserName = userModel.UserName,
+                Password = userModel.Password
             };
 
-            var result = await _userManager.CreateAsync(user, userModel.Password);
+            _ctx.UserManagers.Add(user);
+            _ctx.SaveChanges();
 
-            return result;
+            return user;
+
+
+
         }
 
-        public async Task<IdentityUser> FindUser(string userName, string password)
+        public async Task<UserManager> FindUser(string userName, string password)
         {
-            IdentityUser user = await _userManager.FindAsync(userName, password);
+            UserManager user =  _ctx.UserManagers.Where(e => e.UserName.Equals(userName) && e.Password.Equals(password)).FirstOrDefault();
 
             return user;
         }

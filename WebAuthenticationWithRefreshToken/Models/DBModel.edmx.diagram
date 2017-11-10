@@ -7,6 +7,7 @@
       <Diagram DiagramId="ecb64d8f74b043189588704a364f9dac" Name="Diagram1">
         <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.RefreshToken" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserManager" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
