@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAuthenticationWithRefreshToken", "WebAuthenticationWithRefreshToken\WebAuthenticationWithRefreshToken.csproj", "{A1826D09-3A6C-4741-8CBB-4C26B9971AC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.Web", "AngularJSAuthentication.Web\AngularJSAuthentication.Web.csproj", "{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A1826D09-3A6C-4741-8CBB-4C26B9971AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1826D09-3A6C-4741-8CBB-4C26B9971AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1826D09-3A6C-4741-8CBB-4C26B9971AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

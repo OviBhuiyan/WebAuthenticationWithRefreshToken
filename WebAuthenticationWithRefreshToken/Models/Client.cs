@@ -20,5 +20,6 @@ namespace WebAuthenticationWithRefreshToken.Models
         public string ApplicationType { get; set; }
         public Nullable<int> RefreshTokenLifeTime { get; set; }
         public string AllowedOrigin { get; set; }
+        public Nullable<bool> Active { get; set; }
     }
 }
