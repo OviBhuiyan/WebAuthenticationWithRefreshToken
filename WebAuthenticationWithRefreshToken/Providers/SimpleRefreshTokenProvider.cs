@@ -48,8 +48,8 @@ namespace WebAuthenticationWithRefreshToken.Providers
 
             }
         }
-
-
+        
+        //1. refresh to access token
         public async Task ReceiveAsync(AuthenticationTokenReceiveContext context)
         {
 

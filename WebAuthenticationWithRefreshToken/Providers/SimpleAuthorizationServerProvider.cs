@@ -129,6 +129,7 @@ namespace WebAuthenticationWithRefreshToken.Providers
             return Task.FromResult<object>(null);
         }
 
+        //2. refresh to access token
         public override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
         {
             var originalClient = context.Ticket.Properties.Dictionary["as:client_id"];
