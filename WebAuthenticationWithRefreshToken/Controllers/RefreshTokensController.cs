@@ -26,8 +26,9 @@ namespace WebAuthenticationWithRefreshToken.Controllers
         }
 
         //[Authorize(Users = "Admin")]
+        [Route("api/refreshTokens/delete")]
         [AllowAnonymous]
-        [Route("")]
+        
         public async Task<IHttpActionResult> Delete(string tokenId)
         {
             var result = await _repo.RemoveRefreshToken(tokenId);
