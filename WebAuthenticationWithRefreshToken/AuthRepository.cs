@@ -58,7 +58,7 @@ namespace WebAuthenticationWithRefreshToken
         public async Task<bool> AddRefreshToken(RefreshToken token)
         {
 
-            var existingToken = _ctx.RefreshTokens.Where(r => r.Subject == token.Subject && r.ClientId == token.ClientId).SingleOrDefault();
+            var existingToken = _ctx.RefreshTokens.Where(r => r.Subject == token.Subject && r.ClientId == token.ClientId).FirstOrDefault();
 
             if (existingToken != null)
             {

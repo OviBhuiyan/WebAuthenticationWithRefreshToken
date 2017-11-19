@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAuthenticationWithRefres
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.Web", "AngularJSAuthentication.Web\AngularJSAuthentication.Web.csproj", "{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAuthentication.ResourceServer", "WebAuthentication.ResourceServer\WebAuthentication.ResourceServer.csproj", "{D5A5F8C4-E978-4C40-8CD8-E541F088CE90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABAD4C22-EAD1-4903-9EC6-8EFE93CD433E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A5F8C4-E978-4C40-8CD8-E541F088CE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A5F8C4-E978-4C40-8CD8-E541F088CE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A5F8C4-E978-4C40-8CD8-E541F088CE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A5F8C4-E978-4C40-8CD8-E541F088CE90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
