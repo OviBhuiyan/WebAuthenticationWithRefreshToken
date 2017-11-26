@@ -25,7 +25,7 @@ namespace WebAuthenticationWithRefreshToken.Controllers
         public AccountController()
         {
             _repo = new AuthRepository();
-        }
+        } 
 
         // POST api/Account/Register
         [AllowAnonymous]
