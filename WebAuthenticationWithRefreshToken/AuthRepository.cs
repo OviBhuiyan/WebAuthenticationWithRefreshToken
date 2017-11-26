@@ -38,7 +38,7 @@ namespace WebAuthenticationWithRefreshToken
 
         public async Task<UserManager> FindUser(string userName, string password)
         {
-            UserManager user =  _ctx.UserManagers.Where(e => e.UserName.Equals(userName) && e.Password.Equals(password)).FirstOrDefault();
+            UserManager user = _ctx.UserManagers.Where(e => e.UserName.Equals(userName) && e.Password.Equals(password)).FirstOrDefault();
 
             return user;
         }
@@ -100,6 +100,31 @@ namespace WebAuthenticationWithRefreshToken
         {
             return _ctx.RefreshTokens.ToList();
         }
+
+
+        //Start for external login
+        public async Task<IdentityUser> FindAsync(UserLoginInfo loginInfo)
+        {
+            IdentityUser user = await _userManager.FindAsync(loginInfo);
+
+            return user;
+        }
+
+        public async Task<IdentityResult> CreateAsync(IdentityUser user)
+        {
+            var result = await _userManager.CreateAsync(user);
+
+            return result;
+        }
+
+        public async Task<IdentityResult> AddLoginAsync(string userId, UserLoginInfo login)
+        {
+            var result = await _userManager.AddLoginAsync(userId, login);
+
+            return result;
+        }
+
+        //End For external login
 
 
         public void Dispose()
